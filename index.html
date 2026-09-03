@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Kopi Imaji</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>Kopi Imaji</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Setiap Sesapan, Sebuah Cerita.</h2>
+        <p>Temukan ketenangan di tengah hiruk pikuk kota. Kami menyajikan kopi terbaik dengan biji pilihan, diseduh sepenuh hati untuk menemani harimu.</p>
+        <a href="#menu" class="btn">Lihat Menu</a>
+    </section>
+
+    <section id="menu">
+        <h2 class="section-title">Menu Kami</h2>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterMenu('all')">Semua</button>
+            <button class="filter-btn" onclick="filterMenu('coffee')">Coffee</button>
+            <button class="filter-btn" onclick="filterMenu('non-coffee')">Non-Coffee</button>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-item coffee">
+                <h3>Caramel Macchiato</h3>
+                <p>Espresso dengan susu steamed, vanilla, dan saus karamel lezat.</p>
+                <span class="price">Rp 28.000</span>
+            </div>
+            <div class="menu-item coffee">
+                <h3>Cafe Latte</h3>
+                <p>Paduan sempurna espresso lembut dan susu segar.</p>
+                <span class="price">Rp 25.000</span>
+            </div>
+            <div class="menu-item coffee">
+                <h3>Americano</h3>
+                <p>Kopi hitam murni dari biji arabika pilihan untuk memulai harimu.</p>
+                <span class="price">Rp 20.000</span>
+            </div>
+
+            <div class="menu-item non-coffee">
+                <h3>Matcha Latte</h3>
+                <p>Bubuk matcha premium Jepang yang diseduh dengan susu hangat.</p>
+                <span class="price">Rp 30.000</span>
+            </div>
+            <div class="menu-item non-coffee">
+                <h3>Taro Creamy</h3>
+                <p>Minuman ubi ungu manis dengan tekstur creamy yang menenangkan.</p>
+                <span class="price">Rp 26.000</span>
+            </div>
+            <div class="menu-item non-coffee">
+                <h3>Lychee Tea</h3>
+                <p>Teh melati segar dengan paduan buah leci asli.</p>
+                <span class="price">Rp 22.000</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Tentang Kami</h2>
+        <p>
+            Berdiri sejak tahun 2026, <strong>Kedai Kopi Imaji</strong> lahir dari kecintaan kami terhadap estetika yang tenang dan rasa yang autentik. Kami percaya bahwa secangkir kopi bukan sekadar minuman, melainkan sebuah ruang untuk berkumpul, mengerjakan tugas, bertukar ide, atau sekadar beristirahat sejenak. 
+            <br><br>
+            Ruang kami didesain sedemikian rupa untuk memberikan nuansa hangat layaknya rumah, tempat di mana kreativitas dan ketenangan dapat menyatu.
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
